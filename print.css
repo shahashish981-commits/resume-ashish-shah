@@ -1,0 +1,27 @@
+@media print {
+  @page { size: A4; margin: 10mm; }
+  html { scroll-behavior: auto; }
+  body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #08131f !important; }
+  .nav, .buttons, .contactlinks, .mobile-menu { display: none !important; }
+  .hero { min-height: auto !important; padding: 24px 0 28px !important; break-inside: avoid; }
+  .hero-photo-wrap { position: absolute !important; right: 2% !important; top: 100px !important; transform: none !important; width: 220px !important; height: 280px !important; }
+  .hero-photo-ring { width: 200px !important; height: 260px !important; }
+  .hero-photo { width: 190px !important; height: 245px !important; }
+  h1 { font-size: 58px !important; max-width: 55% !important; }
+  .hero p { max-width: 52% !important; font-size: 14px !important; }
+  .stats { margin-top: 28px !important; }
+  section { padding: 34px 0 !important; break-inside: auto; }
+  .aboutgrid, .cards, .edu { gap: 10px !important; }
+  .card, .info div, .stat { break-inside: avoid; }
+  .timeline { margin-top: 24px !important; }
+  .job { padding-bottom: 22px !important; break-inside: avoid; }
+  .job h3 { font-size: 17px !important; }
+  .job ul { font-size: 11px !important; }
+  .lead { font-size: 12px !important; }
+  h2 { font-size: 32px !important; }
+  .card { padding: 16px !important; }
+  .card h3 { font-size: 17px !important; }
+  .card p, .tag { font-size: 11px !important; }
+  footer { padding: 16px 0 !important; }
+  a { color: inherit !important; text-decoration: none !important; }
+}
