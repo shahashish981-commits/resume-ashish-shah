@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashish Shah — Admin</title><link rel="stylesheet" href="/admin.css"></head><body>
+<div class="admin"><header><div><strong>Ashish Shah</strong><span>Website Admin</span></div><button id="logout">Logout</button></header>
+<main><div id="loginPanel" class="panel"><h1>Admin Login</h1><p>Sign in to update your website.</p><input id="email" type="email" placeholder="Admin email"><input id="password" type="password" placeholder="Password"><button id="login">Login</button><div id="loginMsg"></div></div>
+<div id="editor" class="hidden">
+<div class="panel"><h2>Profile</h2><div class="grid"><label>Hero summary<textarea id="heroSummary"></textarea></label><label>About heading<input id="aboutTitle"></label><label>About paragraph 1<textarea id="about1"></textarea></label><label>About paragraph 2<textarea id="about2"></textarea></label><label>Current role<input id="currentRole"></label><label>Industry<input id="industry"></label><label>Location<input id="location"></label><label>Languages<input id="languages"></label></div></div>
+<div class="panel"><h2>Stats</h2><div class="grid four"><label>Value 1<input id="stat1"></label><label>Label 1<input id="stat1l"></label><label>Value 2<input id="stat2"></label><label>Label 2<input id="stat2l"></label><label>Value 3<input id="stat3"></label><label>Label 3<input id="stat3l"></label><label>Value 4<input id="stat4"></label><label>Label 4<input id="stat4l"></label></div></div>
+<div class="panel"><h2>Experience</h2><p>One JSON object per job. You can edit the text without touching HTML.</p><textarea id="experienceJson" class="code"></textarea></div>
+<div class="panel"><h2>Expertise & Skills</h2><div class="grid"><label>Section heading<input id="expertiseTitle"></label><label>Skills (one per line)<textarea id="skills"></textarea></label></div><textarea id="expertiseJson" class="code"></textarea></div>
+<div class="panel"><h2>Education</h2><textarea id="educationJson" class="code"></textarea></div>
+<div class="panel"><h2>Contact</h2><div class="grid"><label>Contact heading<input id="contactTitle"></label><label>Contact intro<textarea id="contactIntro"></textarea></label><label>Email<input id="contactEmail"></label><label>Phone<input id="contactPhone"></label><label>WhatsApp number<input id="whatsapp"></label><label>LinkedIn URL<input id="linkedin"></label></div></div>
+<div class="panel"><h2>Profile Photo</h2><input id="photo" type="file" accept="image/*"><button id="uploadPhoto">Upload Photo</button><span id="photoMsg"></span></div>
+<div class="actions"><button id="save">SAVE ALL CHANGES</button><span id="saveMsg"></span></div>
+</div></main></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="/config.js"></script><script src="/admin.js"></script></body></html>
